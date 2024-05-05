@@ -6,6 +6,11 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 header {
   width: 100%;
   height: 50px;
@@ -140,7 +145,7 @@ header {
 .box1 {
   background-image: url(113.jpg);
   width: 100vw;
-  height: 475px;
+  height: 525px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -159,13 +164,12 @@ header {
   .box1 {
     height: 40vh;
   }
-  .btn1{
+  .btn1 {
     padding: 5px 15px;
   }
-  .btn2{
+  .btn2 {
     padding: 5px 15px;
   }
-  
 }
 @media only screen and (max-width: 900px) {
   .content h1 {
@@ -190,7 +194,7 @@ header {
 .box2 div {
   color: white;
 }
-.btn3 a{
+.btn3 a {
   color: rgb(255, 255, 255);
   font-size: 15px;
   padding: 10px 25px;
@@ -199,17 +203,17 @@ header {
   margin: 0 5px;
   background-color: rgb(236, 177, 13);
 }
-.btn3 a:hover{
-  background-color:rgba(236, 176, 13, 0.74) ;
+.btn3 a:hover {
+  background-color: rgba(236, 176, 13, 0.74);
 }
-@media only screen and (max-width:621px){
-  .box2{
-    height:80px;
+@media only screen and (max-width: 621px) {
+  .box2 {
+    height: 80px;
   }
-  .mbox{
-    font-size:18px;
+  .mbox {
+    font-size: 18px;
   }
-  .btn3 a{
+  .btn3 a {
     color: rgb(255, 255, 255);
     font-size: 8px;
     padding: 10px 15px;
@@ -219,11 +223,11 @@ header {
     background-color: rgb(236, 177, 13);
   }
 }
-@media only screen and (max-width:724px){
-  .mbox{
-    font-size:15px;
+@media only screen and (max-width: 724px) {
+  .mbox {
+    font-size: 15px;
   }
-  .btn3 a{
+  .btn3 a {
     color: rgb(255, 254, 254);
     font-size: 12px;
     padding: 12px 20px;
@@ -232,16 +236,15 @@ header {
     margin: 0 5px;
     background-color: rgb(236, 177, 13);
   }
-
 }
-@media only screen and (max-width:563px){
-  .box2{
-    height:60px;
+@media only screen and (max-width: 563px) {
+  .box2 {
+    height: 60px;
   }
-  .mbox{
-    font-size:12px;
+  .mbox {
+    font-size: 12px;
   }
-  .btn3 a{
+  .btn3 a {
     color: rgb(255, 254, 254);
     font-size: 8px;
     padding: 10px 15px;
@@ -251,21 +254,19 @@ header {
     background-color: rgb(236, 177, 13);
   }
 }
-@media only screen and (max-width:400px){
-  .box2{
-    height:60px;
+@media only screen and (max-width: 400px) {
+  .box2 {
+    height: 60px;
   }
-  .mbox{
-    font-size:8px;
+  .mbox {
+    font-size: 8px;
   }
-  .btn3 a{
-   
+  .btn3 a {
     font-size: 5px;
     padding: 7px 8px;
-    
   }
-  .box1{
-    height:40vh;
+  .box1 {
+    height: 40vh;
   }
   .content h1 {
     font-size: 25px;
@@ -277,10 +278,233 @@ header {
   .box1 {
     height: 40vh;
   }
-  .btn1{
+  .btn1 {
     padding: 5px 15px;
   }
-  .btn2{
+  .btn2 {
     padding: 5px 15px;
   }
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cnt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img2 img {
+  max-width: 420px;
+  padding-right: 10px;
+  border-radius: 15px;
+}
+.text h2 {
+  font-size: 42px;
+  color: rgb(236, 177, 13);
+}
+.text p {
+  font-size: 26px;
+}
+.text {
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .cnt {
+    flex-direction: column;
+    text-align: center;
+  }
+  .img2 img {
+    width: 400px;
+  }
+  .text {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .cnt {
+    flex-direction: column;
+    text-align: center;
+  }
+  .img2 img {
+    width: 300px;
+  }
+  .text h2 {
+    font-size: 40px;
+  }
+  .text p {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 398px) {
+  .cnt {
+    flex-direction: column;
+    text-align: center;
+  }
+  .img2 img {
+    width: 200px;
+  }
+  .text h2 {
+    font-size: 30px;
+  }
+  .text p {
+    font-size: 20px;
+  }
+}
+.cnt2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.img3 img {
+  max-width: 420px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 15px;
+}
+.text2 h2 {
+  font-size: 42px;
+  color: rgb(236, 177, 13);
+}
+.text2 p {
+  font-size: 26px;
+}
+.text2 {
+  padding-left: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .cnt2 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .img3 img {
+    width: 400px;
+  }
+  .text2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .cnt2 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .img3 img {
+    width: 300px;
+  }
+  .text2 h2 {
+    font-size: 40px;
+  }
+  .text2 p {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 398px) {
+  .cnt2 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .img3 img {
+    width: 200px;
+  }
+  .text2 h2 {
+    font-size: 30px;
+  }
+  .text2 p {
+    font-size: 20px;
+  }
+}
+footer {
+  background-color: blanchedalmond;
+  padding-top: 30px;
+}
+.container2 {
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.footercontent{
+  width: 33.3%;
+}
+.footercontent p {
+  width: 150px;
+  margin: auto;
+  padding: 7px;
+}
+.footercontent ul {
+  text-align: center;
+}
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.list {
+  padding: 0;
+}
+.list li {
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 7px;
+  position: relative;
+}
+.list li::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 155, 33);
+  transition-duration: 1s;
+}
+.list li:hover::before {
+  width: 70px;
+}
+.social-icons{
+  text-align: center;
+  padding: 0;
+
+}
+.social-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+
+}
+.social-icons i{
+  color: rgb(185, 24, 24);
+  font-size: 25px;
+
+}
+.footercontent a{
+  text-decoration: none;
+  color: black;
+
+}
+.footercontent a:hover{
+  color: coral;
+}
+.bottombar{
+  background-color: chocolate;
+  text-align: center;
+  padding:10px 0;
+  margin-top: 50px;
+}
+.bottombar p{
+  color: black;
+  margin: 0;
+  font-size: 16px;
+  padding: 7px;
 }
